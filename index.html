@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Calculadora</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <div id="container">
+        <div id="inside_container">
+            <div id="tela">0</div>
+            <div class="button" id="btm1" onclick="getClick(1)">1</div>
+            <div class="button" id="btm2" onclick="getClick(2)">2</div>
+            <div class="button" id="btm3" onclick="getClick(3)">3</div>
+            <div class="button" id="btm4" onclick="getClick(4)">4</div>
+            <div class="button" id="btm5" onclick="getClick(5)">5</div>
+            <div class="button" id="btm6" onclick="getClick(6)">6</div>
+            <div class="button" id="btm7" onclick="getClick(7)">7</div>
+            <div class="button" id="btm8" onclick="getClick(8)">8</div>
+            <div class="button" id="btm9" onclick="getClick(9)">9</div>
+            <div class="button" id="btm0" onclick="getClick(0)">0</div>
+            <div class="button" id="btmdot" onclick="getClick('.')">,</div>
+            <div class="button" id="btmdivide" onclick="getClick('/')">/</div>
+            <div class="button" id="btmmulti" onclick="getClick('x')">x</div>
+            <div class="button" id="btmminus" onclick="getClick('-')">-</div>
+            <div class="button" id="btmplus" onclick="getClick('+')">+</div>
+            <div class="button" id="btmC" onclick="getClick('C')">C</div>
+            <div class="button" id="btmback" onclick="getClick('back')">&#9664;</div>
+            <div class="button" id="btmresult" onclick="calcularResultado()">=</div>
+        </div>
+    </div>
+    <div class="credits">@caiokeidi - 2020</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

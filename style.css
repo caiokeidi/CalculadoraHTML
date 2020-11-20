@@ -1,0 +1,192 @@
+
+@keyframes hoverbutton{
+    0%{border-bottom-width: 15px; top: 0px}
+    100%{border-bottom-width: 8px; top: 5px}
+}
+
+@keyframes pressedbutton{
+    0%{border-bottom-width: 0px; top: 5px ; background-color: rgb(156, 156, 156) };
+}
+
+@keyframes pressedresults{
+    0%{border-bottom-width: 0px; top: 5px ; background-color: rgb(52, 40, 161) };
+}
+
+@keyframes pressedback{
+    0%{border-bottom-width: 0px; top: 5px ; background-color: rgb(143, 18, 18); };
+}
+
+#container{
+    width: 400px;
+    height: 430px;
+    background-color: gray;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(85, 85, 85);
+    border-radius: 20px;
+    border-top-right-radius: 30px;
+
+    border-right: 12px solid rgb(85, 85, 85);
+    border-bottom: 25px solid rgb(66, 66, 66);
+    
+    padding: 30px;
+    padding-top: 20px;
+    
+
+    margin: auto;
+}
+
+#inside_container{
+    display: grid;
+    grid-template-areas: "tela tela tela tela"
+                        "btmC btmdivide btmmulti btmback"
+                        "btm1 btm2 btm3 btmminus"
+                        "btm4 btm5 btm6 btmplus"
+                        "btm7 btm8 btm9 btmresult"
+                        "btm0 btm0 btmcomma btmresult";
+    
+    justify-content: space-around;
+    justify-items: stretch;
+    row-gap: 10px;
+}
+
+#tela{
+    grid-area: tela;
+    background-color: rgb(64, 206, 99);
+    border-radius: 10px;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px rgb(27, 128, 52);
+
+    font-family: "Goldman", Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.button{
+    
+    position: relative;
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    border-right: 5px solid rgb(202, 202, 202);
+    border-bottom: 15px solid rgb(170, 170, 170);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: rgb(82, 72, 72);
+    font-family: "Goldman", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+
+
+.button:hover{
+    animation-name: hoverbutton;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.button:active{
+    animation-name: pressedbutton;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+
+#btm1{
+    grid-area: btm1;
+}
+#btm2{
+    grid-area: btm2;
+}
+#btm3{
+    grid-area: btm3;
+}
+#btm4{
+    grid-area: btm4;
+}
+#btm5{
+    grid-area: btm5;
+}
+#btm6{
+    grid-area: btm6;
+}
+#btm7{
+    grid-area: btm7;
+}
+#btm8{
+    grid-area: btm8;
+}
+#btm9{
+    grid-area: btm9;
+}
+#btm0{
+    grid-area: btm0;
+}
+#btmcomma{
+    grid-area: btmcomma;
+}
+#btmdivide{
+    grid-area: btmdivide;
+}
+#btmmulti{
+    grid-area: btmmulti;
+}
+#btmminus{
+    grid-area: btmminus;
+}
+#btmplus{
+    grid-area: btmplus;
+}
+#btmback{
+    grid-area: btmback;
+}
+#btmC{
+    grid-area: btmC;
+
+    background-color: rgb(247, 51, 51);
+    border-right: 5px solid rgb(211, 65, 65);
+    border-bottom: 15px solid rgb(170, 35, 35);
+    color: whitesmoke;
+}
+#btmC:active{
+    animation-name: pressedback;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+#btmresult{
+    grid-area: btmresult;
+    background-color: rgb(93, 93, 255);
+    border-right: 5px solid rgb(65, 65, 211);
+    border-bottom: 15px solid rgb(44, 44, 201);
+    color: whitesmoke;
+}
+#btmresult:active{
+    animation-name: pressedresults;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.credits{
+    margin: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+body{
+    background-color: rgb(211, 118, 118);
+}
